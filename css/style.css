@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    background-color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 450px;
+    border-bottom-left-radius: 100px;
+    background-color: #F6836D;
+    background-image: url("../images/bg-pattern-intro.svg"),
+                    linear-gradient(to left, #F3505C, #F6836D);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#header img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    display: inline-block;
+    max-width: 15%;
+    height: 70%;
+    margin-right: 20px;
+}
+
+/* ==== ESTILIZAÇÃO DA ÁREA DO MENU PRINCIPAL ==== */
+.nav-esquerda {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px 0 30px 150px;
+    width: 70%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menu ul {
+    list-style-type: none;
+    position: relative;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+
+.menu .box-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul ul li {
+    display: block;
+    background-color: rgba(255, 255, 255, .9);
+    border-bottom: .8px solid #F3505C;
+}
+
+.menu ul ul a {
+    color: #F3505C;
+}
+
+.menu ul ul a:hover {
+    background-color: #F3505C;
+    color: #fff;
+}
+
+.menu ul li:hover ul {
+    visibility: visible;
+}
+
+.img-arrow {
+    cursor: pointer;
+}
+
+/* ==== ESTILIZAÇÃO DO MENU DE ENTRADA - LADO DIREITO ==== */
+.menu-direito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 30px 150px;
+    width: 40%;
+    height: 100%;
+}
+
+.botao-custom {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #F3505C;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.botao-custom:hover {
+    background-color: rgba(0 , 0, 0, .1);
+    color: #fff;
+}
+
+.transparente {
+    background-color: rgba(0, 0, 0, .1);
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.transparente:hover {
+    background-color: #fff;
+    color: #F3505C;
+}
+
+#area-texto-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    padding-top: 50px;
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+}
+
+#titulo-principal {
+    margin-bottom: 15px;
+    font-size: 42px;
+}
+
+.text-presentation {
+    color: #e2dfdf;
+    font-size: 17px;
+    letter-spacing: .8px;
+}
+
+.area-botoes {
+    margin-top: 40px;
+}
+
+.area-botoes a {
+    margin-left: 20px;
+}
+
+
+/* ==== SESSÃO 1 ==== */
+#sessao-maior {
+    color: #232325;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.container-conteudo {
+    display: flex;
+    flex-direction: row;
+}
+
+.conteudo-texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 120px;
+    padding-top: 150px;
+}
+
+.conteudo-imagem img {
+    width: 700px;
+    height: 550px;
+    background-position: right;
+    position: relative;
+    right: -210px;
+}
+
+.titulo-sessao {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: #161641;
+}
+
+.subtitulo-sessao {
+    font-size: 19px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    color: #161641;
+}
+
+.texto-sessao {
+    color: rgb(38, 45, 51);
+    font-size: 15px;
+    letter-spacing: 1px;
+    max-width: 400px;
+}
+
+/* ==== SESSÃO 2 ==== */
+#sessao-2 {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    background-color: #3B3E61;
+    background-image: url("../images/bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 650px 650px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    position: relative;
+    margin-top: 30px;
+}
+
+#sessao-2 img {
+    width: 450px;
+    height: 500px;
+    position: absolute;
+    top: -60px;
+    left: 90px;
+}
+
+.conteudo-imagem-2 {
+    width: 40%;
+    height: 100%;
+}
+
+.conteudo-texto-2 {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 70px;
+}
+
+/* ==== SESSÃO 3 ==== */
+.sessao-3 {
+    margin-top: 100px;
+}
+
+.img-sessao-3 {
+    width: 40%;
+}
+
+.img-sessao-3 img {
+    width: 700px;
+    height: 600px;
+    background-position: left;
+    position: relative;
+    left: -195px;
+    top: 30px;
+}
+
+.container-texto-sessao-3 {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 0;
+    width: 60%;
+    padding-left: 70px;
+}
+
+/* ==== RODAPÉ ==== */
+#footer {
+    width: 100%;
+    height: 300px;
+    background-color: #232325;
+    border-top-right-radius: 80px;
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.caixa-rodape {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.caixa-rodape a:link {
+    color: #fff;
+}
+
+.link-pattern {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.sublink {
+    margin-top: 15px;
+    font-size: 14px;
+    color:rgba(192, 183, 183, 0.9);
+}
+
+/* ==== TIPOGRAFIA ==== */
+.branco {
+    color: #fff;
+}
