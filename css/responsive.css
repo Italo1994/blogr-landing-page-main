@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    #header {
+        height: 97vh;
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+    }
+    /* ==== ÁREA DE NAVEGAÇÃO DO HEADER ==== */
+    .nav-esquerda {
+        justify-content: flex-start;
+        flex-direction: row;
+        padding: 0;
+        width: 30%;
+    }
+
+    .nav-esquerda ul {
+        display: none;
+    }
+
+    .logo {
+        width: 130px;
+        height: 80px;
+    }
+
+    .menu-direito {
+        padding: 0;
+    }
+
+    /* ==== ÁREA DE TEXTO DO HEADER ==== */
+    #area-texto-header {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 0;
+    }
+
+    #titulo-principal {
+        margin-bottom: 10px;
+        font-size: 32px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .text-presentation {
+        margin-top: 15px;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .botao-custom {
+        padding: 15px 10px;
+        font-size: 16px;
+    }
+
+    .area-botoes a {
+        margin-left: 5px;
+    }
+
+    /* ==== ÁREA DA SESSÃO 1 ==== */
+    #sessao-maior {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 150px;
+    }
+
+    .titulo-sessao {
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        margin: 50px 0 20px 0;
+        color: #161641;
+    }
+
+    .texto-sessao {
+        font-size: 1rem;
+    }
+
+    .container-conteudo {
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .area-texto {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        margin: 100px 0;
+    }
+
+    .conteudo-imagem {
+        width: 100%;
+        height: 150px;
+        background-position: center;
+        position: relative;
+        right: 0;
+    }
+
+    .conteudo-imagem img {
+        width: 100%;
+        height: 250px;
+        background-size: contain;
+    }
+
+    /* ==== SESSÃO 2 ==== */
+
+    #sessao-2 {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding: 50px; */
+    }
+
+    #sessao-2 img {
+        width: 400px;
+        height: 420px;
+        position: absolute;
+        top: -200px;
+        left: 20px;
+    }
+
+    .conteudo-texto-2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 0;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 992px) {
+    #header {
+        height: 500px;
+    }
+
+    /* ==== ÁREA DE NAVEGAÇÃO DO HEADER ==== */
+    .nav-esquerda {
+        justify-content: flex-start;
+        flex-direction: row;
+        padding: 0;
+        padding-left: 30px;
+        width: 40%;
+    }
+
+    .logo {
+        width: 130px;
+        height: 80px;
+    }
+
+    .menu-direito {
+        padding: 0;
+    }
+
+    /* ==== ÁREA DE TEXTO DO HEADER ==== */
+    #area-texto-header {
+        justify-content: center;
+        height: 70%;
+        padding-top: 100px;
+    }
+
+    #titulo-principal {
+        margin-bottom: 10px;
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .text-presentation {
+        margin-top: 50px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+}
