@@ -200,7 +200,7 @@ a:link {
     flex-direction: row;
 }
 
-.conteudo-texto {
+.area-texto {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -210,7 +210,7 @@ a:link {
 }
 
 .conteudo-imagem  {
-    width: 700px;
+    width: 500px;
     /* height: 550px; */
     background-position: right;
     position: relative;
